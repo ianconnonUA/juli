@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="previous-operand" id="previous-operand"></div>
+            <div class="current-operand" id="current-operand">0</div>
+        </div>
+        <div class="buttons">
+            <!-- Scientific Functions -->
+            <button class="btn btn-sci" data-action="sin">sin</button>
+            <button class="btn btn-sci" data-action="cos">cos</button>
+            <button class="btn btn-sci" data-action="tan">tan</button>
+            <button class="btn btn-sci" data-action="pi">π</button>
+            <button class="btn btn-sci" data-action="e">e</button>
+
+            <button class="btn btn-sci" data-action="log">log</button>
+            <button class="btn btn-sci" data-action="ln">ln</button>
+            <button class="btn btn-sci" data-action="sqrt">√</button>
+            <button class="btn btn-sci" data-action="pow">x^y</button>
+            <button class="btn btn-sci" data-action="square">x²</button>
+
+            <!-- Special Controls -->
+            <button class="btn btn-action" data-action="clear">AC</button>
+            <button class="btn btn-action" data-action="delete">DEL</button>
+            <button class="btn btn-sci" data-action="exp">EXP</button>
+            <button class="btn btn-operator" data-action="divide">÷</button>
+            <button class="btn btn-operator" data-action="multiply">×</button>
+
+            <!-- Numbers & Operators -->
+            <button class="btn btn-number" data-number="7">7</button>
+            <button class="btn btn-number" data-number="8">8</button>
+            <button class="btn btn-number" data-number="9">9</button>
+            <button class="btn btn-operator" data-action="subtract">−</button>
+            <button class="btn btn-sci" data-action="open-paren">(</button>
+
+            <button class="btn btn-number" data-number="4">4</button>
+            <button class="btn btn-number" data-number="5">5</button>
+            <button class="btn btn-number" data-number="6">6</button>
+            <button class="btn btn-operator" data-action="add">+</button>
+            <button class="btn btn-sci" data-action="close-paren">)</button>
+
+            <button class="btn btn-number" data-number="1">1</button>
+            <button class="btn btn-number" data-number="2">2</button>
+            <button class="btn btn-number" data-number="3">3</button>
+            <button class="btn btn-operator btn-equals" data-action="calculate" style="grid-row: span 2;">=</button>
+            <button class="btn btn-sci" data-action="fact">x!</button>
+
+            <button class="btn btn-number" data-number="0" style="grid-column: span 2;">0</button>
+            <button class="btn btn-number" data-number=".">.</button>
+            <button class="btn btn-sci" data-action="percent">%</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
