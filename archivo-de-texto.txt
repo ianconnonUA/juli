@@ -1,1 +1,3 @@
 Este es un archivo de texto que estoy usando para probar git.
+
+genere un cambio para que lo vea git y usar git merge
